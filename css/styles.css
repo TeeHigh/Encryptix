@@ -73,6 +73,14 @@ body .container .calculator .buttons-container .grid-item {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
+body .container .calculator .buttons-container #clear, body .container .calculator .buttons-container #AC {
+  background: #7066b2;
+  color: #eee;
+}
+body .container .calculator .buttons-container #percent, body .container .calculator .buttons-container #divide, body .container .calculator .buttons-container .times, body .container .calculator .buttons-container .plus, body .container .calculator .buttons-container .minus, body .container .calculator .buttons-container #equals {
+  background: #ba8a57;
+  color: #eee;
+}
 body .container .calculator .buttons-container .grid-item:active {
   transform: scale(0.98);
 }

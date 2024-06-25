@@ -79,6 +79,16 @@ body{
           font-weight: bold;
         }
 
+        #clear, #AC{
+          background: #7066b2;
+          color: #eee;
+        }
+
+        #percent, #divide, .times, .plus, .minus, #equals{
+          background: #ba8a57;
+          color: #eee;
+        }
+
         .grid-item:active{
           transform: scale(.98);
         }
