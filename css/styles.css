@@ -10,19 +10,73 @@ body {
 body .container {
   width: 100%;
   height: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
 }
 body .container .calculator {
   background: #666;
-  box-shadow: #333 inset 2px 2px 15px;
+  box-shadow: #444 inset -2px -2px 15px;
+  border-radius: 7px;
   width: 26em;
   height: 38em;
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
 body .container .calculator .screen {
-  background: #aaa;
+  background: #ccc;
   width: 100%;
-  height: 120px;
+  padding: 1em;
+  height: 140px;
   border-radius: 7px;
+  text-align: right;
+  box-shadow: #333 inset 5px 5px 15px 0.5px;
+  display: flex;
+  flex-direction: column;
+}
+body .container .calculator .screen .operand-box {
+  flex: 1 1 0;
+  font-size: 1.7em;
+  font-family: monospace;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body .container .calculator .screen .result-box {
+  flex: 1 1 0;
+  font-size: 2.7em;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-weight: bold;
+}
+body .container .calculator .buttons-container {
+  flex: 1 1 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5);
+}
+body .container .calculator .buttons-container .grid-item {
+  background: linear-gradient(#ddd, #999);
+  margin: 5px;
+  width: 80px;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: #444 inset -2px -2px 2px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+body .container .calculator .buttons-container .grid-item:active {
+  transform: scale(0.98);
+}
+body .container .calculator .buttons-container .plus {
+  grid-column: 4/5;
+  grid-row: 4/6;
 }
