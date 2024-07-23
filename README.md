@@ -1,3 +1,8 @@
-This is a repository for an online internship program by Encryptix.
+# Acme Rocket
+A webpage made implementing tailwind-css library 
+<br>
+<br>
+Website live at 👉 https://acme-rockets.ifeoluwase.repl.co/
+<br>
+#TAILWIND-CSS #Mobile-First-Workflow
 
-This is the branch for the Landing Page Project.

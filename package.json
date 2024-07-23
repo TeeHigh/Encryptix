@@ -1,0 +1,16 @@
+{
+  "name": "my-rocket",
+  "version": "1.0.0",
+  "description": "Tailwind project \r <br>\r tailwind-css",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.4.0"
+  }
+}
